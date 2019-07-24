@@ -1,0 +1,110 @@
+html {
+  background: url("wallpaper.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.header{
+  background-color: rgba(255, 0, 0, 0.05);
+  width: auto;
+  margin: 20px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 10px
+}
+.circles{
+  margin: 70px auto;
+  font-size: 30px;
+
+  text-transform: uppercase;
+
+
+}
+.circle2{
+  align-self: flex-end;
+}
+.contents{
+  background-color: rgba(255, 0, 0, 0.05);
+  border-radius: 10px;
+  width: auto;
+  margin: 20px;
+  height: 300px;
+  display: flex;
+  // flex-direction: column;
+  justify-content: space-around;
+}
+#logo{
+  font-size: 100px;
+  font-family: 'Abril Fatface', cursive;
+}
+#taylor-box{
+  display: none;
+  position: fixed;
+  padding: 3px;
+  font-size: 15px;
+  border: 1px solid black;
+  width: 300px;
+  height: 230px;
+  border-radius: 10px;
+  background-color: #FEC8D8;
+}
+#taylor-img{
+  height: 200px;
+}
+
+#guitar-box{
+  display: none;
+  position: fixed;
+  padding: 3px;
+  font-size: 15px;
+  border: 1px solid black;
+  width: 300px;
+  height: 230px;
+  border-radius: 10px;
+  background-color: #FEC8D8
+}
+#guitar-img{
+  height: 200px
+}
+
+#tennis-box{
+  display: none;
+  position: fixed;
+  right: 50px;
+  padding: 3px;
+  font-size: 15px;
+  border: 1px solid black;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #FEC8D8
+}
+#tennis-img{
+  height: 180px;
+}
+
+.social-media{
+  position: fixed;
+  right: 50px;
+  bottom: 20px;
+  background-color: rgba(102,102,102,0.2);
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+.small-icon{
+  height: 30px;
+  margin: 0px 5px
+}
+#sm-text{
+  position: relative;
+  bottom: 10px;
+}
