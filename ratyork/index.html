@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-new.css">
+    <script src="script.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RatYork</title>
+  </head>
+  <body>
+<div class="fixed-div">
+  <a href="#title"> <img src="back-to-top.png" id="go-to-top" alt=""></a>
+
+</div>
+
+
+    <div id="title" class="slide header">
+
+      <div>
+      <a href="#"><img onclick="togglee()" id="menu-icon" src="menu.png" alt=""></a>
+
+      <ul id="top-menu" style="width: 95%;">
+        <a href="#slide2"> <li>why shouldn't you hate rats</li> </a>
+        <a href="#slide1"> <li>how to prevent them</li> </a>
+        <a href="#slide4"> <li>where are rats mostly found?</li> </a>
+        <a href="#slide3"> <li>fun facts</li> </a>
+
+      </ul>
+
+      <ul id="top-menu2" style="width: 95%;">
+        <a href="#aboutus"> <li>about us</li> </a>
+        <a href="#slide5"> <li>images & jokes</li> </a>
+        <a href="#credits"> <li>credits</li> </a>
+
+      </ul>
+
+      </div>
+
+      <h1>RatYork</h1>
+      <a href="#report-section"><h1><button type="button" name="report" id="report">Report a Rat</button></h1></a>
+
+      <div id="menu-div">
+      <ul id="hidden-menu">
+        <a href="#aboutus"><li class="menu-item">About Us</li></a>
+        <a href="#slide5"><li class="menu-item">Images & Jokes</li></a>
+        <a href="#credits"><li class="menu-item">Credits</li></a>
+        <a href="#slide2"> <li class="menu-item">why shouldn't you hate rats</li> </a>
+        <a href="#slide1"> <li class="menu-item">how to prevent them</li> </a>
+        <a href="#slide4"> <li class="menu-item">where are rats mostly found?</li> </a>
+        <a href="#slide3"> <li class="menu-item">fun facts</li> </a>
+      </ul>
+      </div>
+
+      <div id="rat-bar">
+      <img src="rat1.gif" id="rat1" class="rats" style="transform: none" alt="">
+      <img src="rooftop.png" class="rats" style="transform: none" id="rooftop" alt="">
+      </div>
+</div>
+
+
+<div id="slide2" class="slide">
+  <div class="title">
+    <h1>Why you shouldn't hate rats</h1><br>
+    <img class="in-cont" style="transform: none; float: left" src="bomb.png" alt="">
+    <p style="">Rats can sense the scent of <u>explosives</u>, and detect landmines.</p><br><br>
+    <img class="in-cont" style="transform: none; float: right" src="nose.png" alt="">
+    <p style=""> Rats can also <u>smell tuberculosis</u> and with the help of them, many lives have been saved!</p><br><br>
+    <img class="in-cont" style="transform: none; float: left" src="clean.png" alt="">
+    <p>Rats are actually <u>very clean</u> animals and they spend more time grooming themselves than cats!</p>
+  </div>
+  <img class="imgs" src="king.jpg">
+  <img class="imgs" src="fork.jpg">
+</div>
+
+
+
+<div id="slide1" class="slide">
+  <div class="title">
+    <h1>How to prevent rats from coming</h1><br><br>
+    <h2> Practice good sanitation!!!</h2><br><br>
+    <p> - Dispose garbage properly.</p>
+<p> - Store food in rat-proof containers.</p>
+<p> - Do not leave your pets food outside.</p>
+<p> - Remove old wood or rubbish from the property.</p>
+</p>
+  </div>
+</div>
+
+
+<div id="slide3" class="slide">
+  <div class="title">
+    <h1>Fun Facts</h1> <br>
+    <strong>CAUTION!</strong> Rats are able to climp up toilets!!!<br><br>
+    <h2>Just like humans, rats can laugh!</h2>
+    <p>  - When playing, rats make a high pitch noise and some rats can swim over a mile.<br><br>
+</p>
+
+    <h2>All rats eat grains, and some will also eat meat and fish!</h2>
+    <p>  - Rats that live in cities will eat <u>whatever</u> they can get access to in garbage cans, landfills, and even bird feeders! They can also be found near garages, cellar doors, fruit or nut trees, dumpsters, and compost bins!
+</p>
+  </div>
+  <img class="imgs" src="cutemouse.png">
+  <img class="imgs" src="cutemouse2.png">
+</div>
+
+<div id="slide5" class="slide" style="display: flex; justify-content: center;flex-direction:column;align-items:center; z-index: 2;">
+<br><br><br>
+<h1 style="color:white">Hand-Drawn Picture Gallery & Jokes</h1>
+<p style="color: white; font-size:18px">Hover/click on the pictures to reveal answers!</p><br><br>
+  <div class="box-big" style="">
+
+    <div class="boxes" id="box1"
+    onmouseover="document.getElementById('text1').style.display = 'block';"
+    onmouseout="document.getElementById('text1').style.display = 'none';">
+      <span class="questions">What do you call a rat with allergies?</span>
+      <span id="text1" class="joke-answers">Rat a-choo ouille!</span>
+
+      <img id="img1" style="transform: none" class="rats-box" src="rat1.png" alt="">
+    </div>
+
+
+    <div class="boxes" id="box2"
+    onmouseover="document.getElementById('text2').style.display = 'block';"
+    onmouseout="document.getElementById('text2').style.display = 'none';">
+      <span class="questions">What do you call a rat that lost its leg?</span>
+      <span id="text2" class="joke-answers">A pi-rat!</span>
+      <img id="img2" style="transform: none;" class="rats-box" src="rat2.png" alt="">
+    </div>
+
+
+    <div class="boxes" id="box3"
+    onmouseover="document.getElementById('text3').style.display = 'block';"
+    onmouseout="document.getElementById('text3').style.display = 'none';">
+    <span class="questions">What does a twelve-pound rat say to a cat?</span>
+    <span id="text3" class="joke-answers">'Here Kitty, kitty, kitty'!</span>
+      <img id="img3" style="transform: none" class="rats-box" src="rat3.png" alt="">
+    </div>
+
+
+    <div class="boxes" id="box4"
+    onmouseover="document.getElementById('text4').style.display = 'block';"
+    onmouseout="document.getElementById('text4').style.display = 'none';">
+    <span class="questions">What do you call a person with only two rats?</span>
+    <span id="text4" class="joke-answers">Newbie!</span>
+      <img id="img4" style="transform: none" class="rats-box" src="rat4.png" alt="">
+    </div>
+
+    <div class="boxes" id="box5"
+    onmouseover="document.getElementById('text5').style.display = 'block';"
+    onmouseout="document.getElementById('text5').style.display = 'none';">
+    <span class="questions">How do you know your rat is hungry?</span>
+    <span id="text5" class="joke-answers">He's breathing!</span>
+      <img id="img5" style="transform: none" class="rats-box" src="rat5.png" alt="">
+    </div>
+
+
+
+  </div>
+  <br><br><br><br><br>
+  <div class="box-big" style="">
+
+
+    <div class="boxes" id="box6"
+    onmouseover="document.getElementById('text6').style.display = 'block';"
+    onmouseout="document.getElementById('text6').style.display = 'none';">
+    <span class="questions">What is small, furry and brilliant at sword fights?</span>
+    <span id="text6" class="joke-answers">A mouseketeer!</span>
+      <img id="img6" style="transform: none" class="rats-box" src="rat6.png" alt="">
+    </div>
+
+
+    <div class="boxes" id="box7"
+    onmouseover="document.getElementById('text7').style.display = 'block';"
+    onmouseout="document.getElementById('text7').style.display = 'none';">
+    <span class="questions">Where do you go to replace a rat's tail?</span>
+    <span id="text7" class="joke-answers">A re-tail store!</span>
+      <img id="img7" style="transform: none" class="rats-box" src="rat7.png" alt="">
+    </div>
+
+
+    <div class="boxes" id="box8"
+    onmouseover="document.getElementById('text8').style.display = 'block';"
+    onmouseout="document.getElementById('text8').style.display = 'none';">
+    <span class="questions">Why did the rat eat a candle inside the Jack-o-Lantern?</span>
+    <span id="text8" class="joke-answers">For some light refreshment!</span>
+      <img id="img8" style="transform: none" class="rats-box" src="rat8.png" alt="">
+    </div>
+
+
+    <div class="boxes" id="box9"
+    onmouseover="document.getElementById('text9').style.display = 'block';"
+    onmouseout="document.getElementById('text9').style.display = 'none';">
+    <span class="questions">What is a rats favorite game?</span>
+    <span id="text9" class="joke-answers">Hide and squeak!</span>
+      <img id="img9" style="transform: none" class="rats-box" src="rat9.png" alt="">
+    </div>
+
+
+    <div class="boxes" id="box10"
+    onmouseover="document.getElementById('text10').style.display = 'block';"
+    onmouseout="document.getElementById('text10').style.display = 'none';">
+    <span class="questions">What did the rat say when his friend broke his front teeth?</span>
+    <span id="text10" class="joke-answers">Hard cheese!</span>
+      <img id="img10" style="transform: none" class="rats-box" src="rat10.png" alt="">
+    </div>
+
+</div>
+<br><br><br><br><br>
+</div>
+
+
+
+
+
+<div id="report-section" class="slide">
+  <div style="z-index: 8001" class="title">
+    <h1 id="reportTitle">Report a rat:</h1>
+    <form id="formm" name="form1" method="post">
+      Your zipcode: <input type="number" id="zipcode" name="zip" placeholder=""="ex. 07010"> <br>
+      Date: <input type="date" id="date" name="date"> <br>
+      Size of rat:
+      small <input id="rat12" type="radio" value="small" name="size">
+      medium <input id="rat2" type="radio" value="medium" name="size">
+      large <input id="rat3" type="radio" value="large" name="size"><br><br>
+      Anything else you want to add:<br><input type="text" name="name"placeholder="Start typing..."><br><br>
+      <button onclick="exampleRequired()" type="button" id="reportrat" name="report" value="Report a Rat">Report a Rat</button>
+
+    </form>
+
+    <p id="thank-you"></p>
+
+  </div>
+</div>
+
+
+<div id="slide4" class="slide header">
+    <h1>Map of Rats in NY</h1>
+    <iframe height='460' src='https://www.openthebooks.com/map-widget/?Map=32508&MapType=Pin&Zip=10003' frameborder='0' width='100%'></iframe>
+
+</div>
+
+<div class="slide">
+  <div class="title" id="credits">
+  <h1 style="color: rgb(255,182,193)">Credits</h1>
+  <p>http://gis.nyc.gov/doitt/nycity</p>
+  <p>https://www.openthebooks.com/map/?Map=32508&MapType=Pin</p>
+  <p>https://i.pinimg.com/originals/62/05/2c/62052c305d7c2f8344cb4d1edb59dc3a.jpg</p>
+  <p>https://ak7.picdn.net/shutterstock/videos/3245497/thumb/1.jpg</p>
+</div>
+<div class="title" id="aboutus">
+<h1 style="color: white; opacity: 1">About Us</h1>
+<p>Our names are Lara Erik, Jasmine Rodriguez, and Lisa Chien and we are apart of a program called Girls Who Code. We created RatYork because of our passion for rats and to educate individuals of rats and their uses. Rats are misunderstood and seen as rancid creatures.. But that is not their only basis and they hold more uses that most people don’t know about. This website will show you a new side of rats and hopefully change your minds. We hope you enjoy our website.
+</p>
+</div><br><br><br><br><br><br><br>
+</div>
+
+  </body>
+</html>
