@@ -25,7 +25,7 @@
     left: -10%;
   }
   .box-big{
-    /* flex-direction: column;*/
+    flex-direction: column;
   }
 
 }
@@ -441,7 +441,6 @@ iframe{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: column;
 }
 
 .joke-answers{
