@@ -25,7 +25,7 @@
     left: -10%;
   }
   .box-big{
-    flex-direction: column;
+    /* flex-direction: column;*/
   }
 
 }
@@ -269,7 +269,7 @@
   /* border: 1px black solid; */
   height: 100px;
   width: 100%;
-  position: fixed;
+  position: absolute;
   bottom: 0px;
 }
 
@@ -403,6 +403,7 @@ iframe{
   color: black;
   font-size: 20px;
   padding-top: 15px;
+  margin: 10px auto;
 }
 #img1{
   position: relative; top: -30px;
@@ -435,11 +436,12 @@ iframe{
   opacity: 0.4;
 }
 .box-big{
-  height: 300px;
+  height: auto;
   width: 90%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
 }
 
 .joke-answers{
