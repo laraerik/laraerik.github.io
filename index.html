@@ -1,62 +1,81 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Startup</title>
+
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>Lara Erik</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
 
-    <div class="header">
-      <span id="logo">Lara Erik</span>
-
-      <div class="social-media">
-        <span id="sm-text">follow me on: </span>
-        <a href="https://www.instagram.com/lerikmusic/"><img class="small-icon" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_instagram-512.png"></a>
-        <a href="https://twitter.com/laraerikk"><img class="small-icon" src="https://image.flaticon.com/icons/png/512/23/23681.png"></a>
-        <a href="https://www.youtube.com/channel/UCOZnZDVTp8NwFmolU6XmW_w"><img class="small-icon" src="https://image.flaticon.com/icons/png/512/37/37976.png"></a>
+    <div class="container d-flex align-items-center justify-content-center h-100" id="first-container">
+      <div class="row">
+        <header class="text-center col-12">
+          <a href="index.html" class="text-decoration-none"><h1 class="text-uppercase"><strong>Lara Erik</strong></h1></a>
+        </header>
+        <div class="buffer col-12"></div>
+        <section class="text-center col-12">
+          <hr>
+          <a href="#content"><button class="btn btn-primary btn-xl" onclick="showContent()">find out more about me</button></a>
+        </section>
       </div>
-
     </div>
-    <div class="content">
-    </div>
 
-    <div class="contents">
-      <div class="circles circle1"
-      onmouseover="document.getElementById('taylor-box').style.display = 'block';"
-      onmouseout="document.getElementById('taylor-box').style.display = 'none';">
-        Taylor
-        <div id='taylor-box'>
-          <span>
-            I love Taylor Swift!!! ❤
-            <img id="taylor-img" src="taylor.jpg">
-          </span>
-        </div>
+    <div class="container" id="content">
+      <div class="row" style="margin-bottom:20px">
+        <p id="findMeOnText">Find me on...</p>
       </div>
-      <div class="circles circle2"
-      onmouseover="document.getElementById('guitar-box').style.display = 'block'"
-      onmouseout="document.getElementById('guitar-box').style.display = 'none';">
-        Guitars
-        <div id='guitar-box'>
-          <span>
-            I LOVE GUITARS!!!❤
-            <img id="guitar-img" src="guitar.jpg">
-          </span>
+      <div class="row d-flex justify-content-around align-items-center">
+
+        <div class="card" style="width: 18rem;">
+          <img src="img1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">instagram:</h5>
+            <a href="#first-container" class="btn btn-primary cart-button">@_laraerik_</a>
+            <a href="#first-container" class="btn btn-primary cart-button">@programmerlara</a>
+            <a href="#first-container" class="btn btn-primary cart-button">@lerikmusic</a>
+          </div>
         </div>
-      </div>
-      <div class="circles circle3"
-      onmouseover="document.getElementById('tennis-box').style.display = 'block';"
-      onmouseout="document.getElementById('tennis-box').style.display = 'none';">
-        Tennis
-        <div id='tennis-box'>
-          <span>
-            I LOVE TENNIS!!!❤
-            <img id="tennis-img" src="tennis.jpg">
-          </span>
+
+        <div class="card text-right">
+          <div class="card-body">
+            <h5 class="card-title">linkedin:</h5>
+            <a href="https://www.linkedin.com/in/lara-erik-6675aa191/" class="btn btn-primary cart-button">my profile</a>
+          </div>
+          <img src="img3.png" class="card-img-top" alt="...">
         </div>
+
+        <div class="card card-to-end" style="width: 18rem;">
+          <img src="img2.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">youtube:</h5>
+            <a href="#first-container" class="btn btn-primary cart-button">my channel</a>
+          </div>
+          <div class="card-body"><hr style="max-width:150px"></div>
+          <div class="card-body text-right">
+            <h5 class="card-title">ultimate guitar:</h5>
+            <a href="https://www.ultimate-guitar.com/u/laraerik1" class="btn btn-primary cart-button">my profile</a>
+          </div>
+        </div>
+
       </div>
     </div>
 
   </body>
+
+  <script type="text/javascript">
+    function showContent(){
+      document.getElementById('content').style.display = "block";
+    }
+  </script>
 </html>

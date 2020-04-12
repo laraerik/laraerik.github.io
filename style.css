@@ -1,110 +1,94 @@
+body,
 html {
-  background: url("wallpaper.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: black url(header.jpg) no-repeat center center fixed;
+  -webkit-background-size:cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  scroll-behavior: smooth;
 }
-body{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.header{
-  background-color: rgba(255, 0, 0, 0.05);
-  width: auto;
-  margin: 20px;
-  height: 200px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  border-radius: 10px
-}
-.circles{
-  margin: 70px auto;
-  font-size: 30px;
 
+h1{
+  font-size: 5rem;
+  color: #e2dbdb;
+  transition: transform 0.2s;
+}
+
+h1:hover{
+  color: rgb(200,200,200);
+  transform: scale(1.1);
+}
+
+hr{
+  border-color: #F05F44;
+  border-width: 3px;
+  max-width: 65px;
+}
+
+.buffer{
+  height: 50px;
+}
+
+.btn{
+  font-weight: 700;
+  border-radius: 300px;
   text-transform: uppercase;
+  transition: transform .2s;
+}
 
+.btn-primary{
+  background-color: #F05F44;
+  border-color: #F05F44;
+}
 
+.btn-primary:hover{
+  background-color: #ee4b08;
+  border-color: #ee4b08;
+  transform: scale(1.2);
+  /* border-width: 4px; */
 }
-.circle2{
-  align-self: flex-end;
+
+.btn-xl{
+  padding: 1rem 2rem;
 }
-.contents{
-  background-color: rgba(255, 0, 0, 0.05);
-  border-radius: 10px;
-  width: auto;
-  margin: 20px;
-  height: 300px;
-  display: flex;
-  // flex-direction: column;
-  justify-content: space-around;
+
+a:active{
+  color: black;
 }
-#logo{
-  font-size: 100px;
-  font-family: 'Abril Fatface', cursive;
-}
-#taylor-box{
+
+#content{
   display: none;
-  position: fixed;
-  padding: 3px;
-  font-size: 15px;
-  border: 1px solid black;
-  width: 300px;
-  height: 230px;
-  border-radius: 10px;
-  background-color: #FEC8D8;
-}
-#taylor-img{
-  height: 200px;
+  border-radius: 35px;
+  padding: 35px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 35px;
 }
 
-#guitar-box{
-  display: none;
-  position: fixed;
-  padding: 3px;
-  font-size: 15px;
-  border: 1px solid black;
-  width: 300px;
-  height: 230px;
-  border-radius: 10px;
-  background-color: #FEC8D8
-}
-#guitar-img{
-  height: 200px
+.card{
+  margin-bottom: 30px;
 }
 
-#tennis-box{
-  display: none;
-  position: fixed;
-  right: 50px;
-  padding: 3px;
-  font-size: 15px;
-  border: 1px solid black;
-  width: 300px;
-  height: 200px;
-  border-radius: 10px;
-  background-color: #FEC8D8
-}
-#tennis-img{
-  height: 180px;
+.text-right{
+  width: 18rem;
+  height: fit-content;
 }
 
-.social-media{
-  position: fixed;
-  right: 50px;
-  bottom: 20px;
-  background-color: rgba(102,102,102,0.2);
-  padding: 3px 10px;
-  border-radius: 5px;
+.card-to-end{
+  height: fit-content;
 }
-.small-icon{
-  height: 30px;
-  margin: 0px 5px
+
+p{
+  color: #e2dbdb;
+  font-size: 21px;
 }
-#sm-text{
-  position: relative;
-  bottom: 10px;
+
+.cart-button{
+  margin-bottom: 10px;
+  text-transform: lowercase;
+}
+#findMeOnText{
+  font-size: 25px;
 }
